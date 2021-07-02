@@ -1,32 +1,113 @@
-*{
+{
     margin: 0;
     padding: 0;
 }
+/* faire disparaître la scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+html {
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+body{
+    overflow-x: hidden; 
+}
+
+
+
+/* <style> 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,400&display=swap');
+</style>*/
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Ubuntu:ital,wght@0,300;1,400&display=swap');
+
 /* ************navbar**************** */
 
-
-
-
 .navbar {
+    width: 100vw;
     background-color: black;
-    min-height: 60px;
+    min-height: 40px;
 }
+
+h1{
+    font-family: 'Kalam', sans-serif;
+    font-size: 3.3em;
+    color:darkorange;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+p{
+    font-family: 'Kalam', sans-serif;
+    font-size: 2em;
+    color:darkorange;
+    text-align: left;
+    padding: 20px;
+}
+/* .flotte {
+    float:left;
+    }*/
+a{
+    float: right;
+}
+
 /* * ************fin navbar**************** */
 
 .conteneur{
     background-color: darkgrey;
     width: 100vw;
+    margin: auto;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 30px; */
+    /* padding-bottom: 40px; */
+    padding: 30px 30px 40px 30px;
+
 }
 
-
-
 .article{
-    min-height: 300px;
-    width: 100%;
+
+    min-height: 600px;
     background-color: darkorange;
     display: flex;
     flex-direction: column;
-    margin: 10px 10px 10px 10px;
+    /* padding-top: 25px; */
+    margin: 20px 15px 20px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.article img{
+    object-fit: cover;
+
+}
+
+.decorCafe{
+    background-image: url(/imagesCafe/grainsCafé4Bas.jpg);
+}
+
+.image{
+    width: 500px;
+    height: 350px;
+}
+
+button{
+    width: 250px;
+    font-size: 1.2em;
+    background-color: rgb(238, 231, 222);
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(240, 197, 136);
+    color: rgb(124, 104, 77);
+    /* opacity: 50%; */
+    cursor: pointer;
+    transition: 0.5 ease-in-out;
 }
