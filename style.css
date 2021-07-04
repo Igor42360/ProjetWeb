@@ -137,10 +137,28 @@ button:hover{
 
 /* ***************body footer**************** */
 
-.footer{
+.row{
     width: 100vw;
-    background-color: black;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;    
+    min-height: 30px;
 }
-
+.logoHand{
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    margin-left: 45px;
+}
+.logoLang{
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    margin-left: 1000px;
+    
+    float: right;
+}
 
 
